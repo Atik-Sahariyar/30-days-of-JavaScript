@@ -20,7 +20,7 @@ const fib = (n) => ( n <= 1 ? n: fib(n - 1) + fib(n - 2));
 
 // Memoizing the functions
 const memoizedSum = memoize(sum);
-const mwemoizedFactorial = memoize(factorial);
+const memoizedFactorial = memoize(factorial);
 const memoizedFib = memoize(fib);
 
 // test case 1
