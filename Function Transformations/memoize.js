@@ -3,7 +3,7 @@ const memoize = (fn) => {
 
     return (...args) => {
         const key = JSON.stringify(args);
-        if(cache[key]){
+        if(key in cache){
             return cache[key];
         } else {
             const result = fn(...args);
